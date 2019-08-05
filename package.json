@@ -8,13 +8,13 @@
     "@types/react": "16.8.24",
     "@types/react-dom": "16.8.5",
     "axios-observable": "^1.1.2",
-    "kendo-ui-core": "^2019.2.801",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux-observable": "^1.1.0",
     "reselect": "^4.0.0",
+    "styled-components": "^4.3.2",
     "typescript": "3.5.3"
   },
   "scripts": {

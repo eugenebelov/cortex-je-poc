@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import AuthUser from './auth';
 
 const App: React.FC = () => {
   return (
@@ -8,8 +9,8 @@ const App: React.FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-      </header>
-      <a
+        <AuthUser></AuthUser>
+        <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
+      </header>
     </div>
   );
 }
