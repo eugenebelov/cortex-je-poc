@@ -3,15 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-data-query": "^1.5.1",
+    "@progress/kendo-react-buttons": "3.2.2",
+    "@progress/kendo-react-dateinputs": "^3.2.2",
+    "@progress/kendo-react-dropdowns": "^3.2.2",
+    "@progress/kendo-react-grid": "^3.2.2",
+    "@progress/kendo-react-inputs": "^3.2.2",
+    "@progress/kendo-react-intl": "^3.2.2",
+    "@progress/kendo-theme-default": "^4.1.0",
     "@types/jest": "24.0.16",
     "@types/node": "12.6.9",
     "@types/react": "16.8.24",
     "@types/react-dom": "16.8.5",
+    "@types/styled-components": "^4.1.18",
     "axios-observable": "^1.1.2",
     "react": "^16.8.6",
+    "react-adal": "^0.4.24",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "redux": "^4.0.4",
     "redux-observable": "^1.1.0",
     "reselect": "^4.0.0",
     "styled-components": "^4.3.2",
@@ -39,7 +50,16 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "husky": "^3.0.2",
+    "prettier": "1.18.2",
+    "pretty-quick": "^1.11.1",
     "redux-devtools-extension": "^2.13.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
