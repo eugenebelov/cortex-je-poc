@@ -1,8 +1,7 @@
 import React, { FC } from "react";
-import styled from "styled-components";
 
-const NaviagtionBar: FC = () => {
+const NavigationBar: FC = () => {
   return <div>Dashboard</div>;
 };
 
-export default NaviagtionBar;
+export default NavigationBar;

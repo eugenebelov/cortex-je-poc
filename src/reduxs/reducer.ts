@@ -1,5 +1,8 @@
-import { combineReducers, AnyAction, Reducer } from "redux";
+import { combineReducers } from "redux";
+import filterReducer from "../dashboard/EngagementsPage/SearchFilter/reducer";
+import tableReducer from "../dashboard/EngagementsPage/EngagementsList/reducer";
 
-const root: Reducer<string, AnyAction> = combineReducers({} as any);
-
-export const rootReducer = root;
+export default combineReducers<{}>({
+  filterReducer,
+  tableReducer
+});

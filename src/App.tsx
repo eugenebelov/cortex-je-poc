@@ -1,14 +1,20 @@
 import "@progress/kendo-theme-default/dist/all.css";
 import React, { Component } from "react";
+import { Provider } from "react-redux";
 import styled, { ThemeProvider } from "styled-components";
 import "./App.css";
 import PageHeader from "./components/PageHeader";
-import NaviagtionBar from "./components/NavigationBar";
+import NavigationBar from "./components/NavigationBar";
+
+import { store } from "./reduxs/store";
+
 import {
   ITheme,
   themWhite as ThemeWhite,
   themeDark as ThemeDark
 } from "./AppThemes";
+import EngagementsList from "./dashboard/EngagementsPage/EngagementsList";
+import SearchFilter from "./dashboard/EngagementsPage/SearchFilter";
 
 enum ThemeType {
   DARK = "dark",
@@ -42,12 +48,16 @@ class App extends Component {
   render() {
     return (
       <Application>
-        <ThemeProvider theme={this.state.theme}>
-          <div>
-            <PageHeader></PageHeader>
-            <NaviagtionBar></NaviagtionBar>
-          </div>
-        </ThemeProvider>
+        <Provider store={store}>
+          <ThemeProvider theme={this.state.theme}>
+            <div>
+              <PageHeader></PageHeader>
+              <NavigationBar></NavigationBar>
+              <SearchFilter></SearchFilter>
+              <EngagementsList></EngagementsList>
+            </div>
+          </ThemeProvider>
+        </Provider>
       </Application>
     );
   }
